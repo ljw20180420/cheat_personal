@@ -1,0 +1,1 @@
+rclone sync lnew: rnew: --skip-links --exclude **/.conda/** --exclude **/.venv/** --exclude **/__pycache__/** --delete-excluded --progress
