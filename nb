@@ -1,0 +1,2 @@
+# Rebuild the index, listing files by last modified, reversed.
+nb index rebuild

@@ -1,0 +1,155 @@
+?              help                       this screen
+m              mail                       compose a new mail message
+/              search                     search for a regular expression
+<Esc>/         search-reverse             search backwards for a regular expression
+<Esc>b  search in message bodies
+<search>~b
+n              search-next                search for next match
+search-opposite          search for next match in opposite direction
+l              limit                      show only messages matching a pattern
+c              change-folder              open a different folder
+y       show incoming mailboxes list
+<change-folder>?
+r              reply                      reply to a message
+g              group-reply                reply to all recipients
+L              list-reply                 reply to specified mailing list
+f              forward-message            forward a message with comments
+b              bounce-message             remail a message to another user
+R              recall-message             recall a postponed message
+e              edit-or-view-raw-message   edit the raw message if the mailbox is not read-only, otherwise view it
+a              create-alias               create an alias from a message sender
+alias-dialog             open the aliases dialog
+.              mailbox-list               list mailboxes with new mail
+j              next-undeleted             move to the next undeleted message
+<Down>         next-undeleted             move to the next undeleted message
+k              previous-undeleted         move to the previous undeleted message
+<Up>           previous-undeleted         move to the previous undeleted message
+J              next-entry                 move to the next entry
+K              previous-entry             move to the previous entry
+<Tab>          next-new-then-unread       jump to the next new or unread message
+<Esc><Tab>     previous-new-then-unread   jump to the previous new or unread message
+H              top-page                   move to the top of the page
+M              middle-page                move to the middle of the page
+L              bottom-page                move to the bottom of the page
+>              next-line                  scroll down one line
+<              previous-line              scroll up one line
+]              half-down                  scroll down 1/2 page
+[              half-up                    scroll up 1/2 page
+z              next-page                  move to the next page
+<Right>        next-page                  move to the next page
+<PageDown>     next-page                  move to the next page
+Z              previous-page              move to the previous page
+<Left>         previous-page              move to the previous page
+<PageUp>       previous-page              move to the previous page
+=              first-entry                move to the first entry
+<Home>         first-entry                move to the first entry
+*              last-entry                 move to the last entry
+<End>          last-entry                 move to the last entry
+1-9            jump                       jump to an index number
+<Enter>        display-message            display a message
+<Return>       display-message            display a message
+<Space>        display-message            display a message
+<KeypadEnter>  display-message            display a message
+v              view-attachments           show MIME attachments
+h              display-toggle-weed        display message and toggle header weeding
+p              print-message              print the current entry
+$              sync-mailbox               save changes to mailbox
+q              quit                       save changes to mailbox and quit
+o              sort-mailbox               sort messages
+O              sort-reverse               sort messages in reverse order
+d              delete-message             delete the current entry
+D              delete-pattern             delete non-hidden messages matching a pattern
+u              undelete-message           undelete the current entry
+U              undelete-pattern           undelete non-hidden messages matching a pattern
+@              display-address            display full address of sender
+s              save-message               save message/attachment to a mailbox/file
+C              copy-message               copy a message to a file/mailbox
+F              flag-message               toggle a message's 'important' flag
+N              toggle-new                 toggle a message's 'new' flag
+w              set-flag                   set a status flag on a message
+W              clear-flag                 clear a status flag from a message
+M              show-log-messages          show log (and debug) messages
+t              tag-entry                  tag the current entry
+T              tag-pattern                tag non-hidden messages matching a pattern
+^T             untag-pattern              untag non-hidden messages matching a pattern
+;              tag-prefix                 apply next function to tagged messages
+tag-prefix-cond          apply next function ONLY to tagged messages
+end-cond                 end of conditional execution (noop)
+Y              edit-label                 add, change, or delete a message's label
+x              exit                       exit this menu
+|              pipe-entry                 pipe message/attachment to a shell command
+~              mark-message               create a hotkey macro for the current message
+!              shell-escape               invoke a command in a subshell
+:              enter-command              enter a neomuttrc command
+V              show-version               show the NeoMutt version number and date
+^L             redraw-screen              clear and redraw the screen
+
+<F1>    show NeoMutt documentation
+<shell-escape> less /usr/share/doc/neomutt/manual.txt<Enter>
+
+<F2>    show NeoMutt documentation
+<shell-escape> less /usr/share/doc/neomutt/manual.txt<Enter>
+
+
+unbound functions
+
+what-key                 display the keycode for a key press
+compose-to-sender        compose new message to the current message sender
+get-children             get all children of the current message
+get-message              get message with Message-Id
+get-parent               get parent of the current message
+group-chat-reply         reply to all recipients preserving To/Cc
+imap-fetch-mail          force retrieval of mail from IMAP server
+imap-logout-all          logout from all IMAP servers
+list-subscribe           subscribe to a mailing list
+list-unsubscribe         unsubscribe from a mailing list
+purge-message            delete the current entry, bypassing the trash folder
+quasi-delete             delete from NeoMutt, don't touch on disk
+sidebar-first            move the highlight to the first mailbox
+sidebar-last             move the highlight to the last mailbox
+sidebar-next             move the highlight to next mailbox
+sidebar-next-new         move the highlight to next mailbox with new mail
+sidebar-open             open highlighted mailbox
+sidebar-page-down        scroll the sidebar down 1 page
+sidebar-page-up          scroll the sidebar up 1 page
+sidebar-prev             move the highlight to previous mailbox
+sidebar-prev-new         move the highlight to previous mailbox with new mail
+sidebar-toggle-virtual   toggle between mailboxes and virtual mailboxes
+sidebar-toggle-visible   make the sidebar (in)visible
+toggle-read              toggle view of read messages
+view-raw-message         show the raw message
+check-stats              calculate message statistics for all mailboxes
+current-bottom           move entry to bottom of screen
+current-middle           move entry to middle of screen
+current-top              move entry to top of screen
+
+Message flags:
+
+$flag_chars:
+    '*'     message is tagged
+    '!'     message is flagged
+    'D'     message is deleted
+    'd'     attachment is deleted
+    'r'     message has been replied to
+    'O'     message has been read
+    'N'     message is new
+    'o'     thread has been read
+    'n'     thread has at least one new message
+    '-'     message has been read (%S expando)
+    ' '     message has been read (%Z expando)
+
+$crypt_chars:
+    'S'     message signed with a verified key
+    'P'     message is PGP-encrypted
+    's'     message is signed
+    'K'     message contains a PGP key
+    ' '     message has no cryptography information
+
+$to_chars:
+    ' '     message is not To: you
+    '+'     message is To: you and only you
+    'T'     message is To: you
+    'C'     message is Cc: to you
+    'F'     message is From: you
+    'L'     message is sent to a subscribed mailing list
+    'R'     you are in the Reply-To: list
