@@ -1,0 +1,1 @@
+prefetch accession --max-size 100GB --output_directory /home/ljw/sdc1/data
