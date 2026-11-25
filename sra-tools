@@ -1,3 +1,6 @@
 prefetch <accession> --max-size|-X u --output-directory|-O /home/ljw/sdc1/data
 
-fasterq-dump <path>/<accesion> --outdir|-O /home/ljw/sdc1/data
+fasterq-dump <path>/<accesion> --outdir|-O /home/ljw/sdc1/data --temp|-t /home/ljw/sdc1/data
+
+`cat file | xtract` works
+`xtract < file` fails
