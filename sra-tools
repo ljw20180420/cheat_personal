@@ -4,3 +4,5 @@ fasterq-dump <path>/<accesion> --outdir|-O /home/ljw/sdc1/data --temp|-t /home/l
 
 `cat file | xtract` works
 `xtract < file` fails
+
+vdb-config -i
